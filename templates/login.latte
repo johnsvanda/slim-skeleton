@@ -1,0 +1,25 @@
+{extends layout.latte}
+
+{block title} Login {/block}
+
+
+
+{block body}
+<section>
+<form method="POST" action="./login">
+<h1>Login in!</h1>
+
+<label for="name">Name</label>
+<input type="text" name="name" required></input>
+
+<label for="name">Password</label>
+<input type="password" name="password" required></input>
+<input type="submit" value="Submit">
+</form>
+
+{if isset($username)}
+<p>Welcome {$username} your password is {$password}</p>
+{/if}
+
+</section>
+{/block}

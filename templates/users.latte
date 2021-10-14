@@ -1,0 +1,34 @@
+{extends layout.latte}
+
+{block title} Users list {/block}
+
+<section>
+
+<table>
+
+</table>
+
+{block body}
+<section>
+	<table class="fl-table">
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>name</th>
+				<th>email</th>
+				<th>country</th>
+			</tr>
+		</thead>
+		<tbody>
+			{foreach $users as $u}
+			<tr>
+				<td>{$u['id']}</td>
+				<td>{$u['name']}</td>
+				<td>{$u['email']}</td>
+				<td>{$u['country']}</td>
+			</tr>
+			{/foreach}
+		</tbody>
+	</table>
+</section>
+{/block}

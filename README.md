@@ -23,4 +23,4 @@ DB connection inside Docker:
 
 ### First run:
 You have to import DB structure using following command:
-`docker-compose exec postgres bash /tmp/docker/import.sh`
+`docker-compose exec postgres bash /tmp/docker/import.sh`# slim-skeleton
